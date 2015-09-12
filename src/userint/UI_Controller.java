@@ -143,7 +143,7 @@ public class UI_Controller {
 						"`presentacion_texto` varchar(250) DEFAULT NULL," +
 						"`drogas_texto` varchar(200) DEFAULT NULL," +
 						"PRIMARY KEY (`nro_certificado_anmat`,`medicamento_nombre`,`formaFarmaceutica`,`presentacion_texto`,`drogas_texto`,`presentacion_unidades`,`indexCertif`), " +
-						"KEY `a` (`droga_nombre`)" +
+						"KEY `a` (`droga_nombre`),   KEY `b` (`medicamento_nombre`) " +
 						");";
 
 		makeSQL("drogas_anmat", insertStament, createStament, UI.getPathFiles(),"anmat",null,-1);	
